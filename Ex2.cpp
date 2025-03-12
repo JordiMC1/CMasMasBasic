@@ -10,4 +10,11 @@ int main () {
     if (edat < 18) {
         cout << "Tu ets menor d'edat";
     }
+    else if (edat > 18) {
+        cout << ("Tu ets major d'edat");
+    }
+    else if (edat = 18) {
+        cout << ("Tu ets major d'edat");
+    return 0;
+    }
 }
