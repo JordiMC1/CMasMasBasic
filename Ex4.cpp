@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     int menu;
     
-    cout << "Eligeix una opció (número):    1. Suma    2. Resta   3. Multiplicació  4. Divisió  5. Módul: " << std::endl;
+    cout << "Eligeix una opció (número):    1. Suma    2. Resta   3. Multiplicació  4. Divisió  5. Módul   6. Canvi de base: " << std::endl;
     cin >> menu;
 
     if (menu == 1) {
@@ -70,6 +70,18 @@ int main() {
 
         cout << "El resultat de " << num1 << " dividit per " << num2 << " modulat és " << num1 % num2;
         
+    }
+
+    if (menu == 6) {
+        int num1, base;
+
+        cout << "Eligeix el número DECIMAL el cual volem cambiar de base: ";
+        cin >> num1;
+
+        cout << "Eligeix la base vols utilitzar? 1. Binari   2. Octal 3. Hexadecimal: " << std::endl;
+        cin >> base;
+        
+        cout << "El número binari de " << num1 << " és " << 
     }
 
     return 0;
