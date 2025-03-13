@@ -85,8 +85,21 @@ int main() {
             cin >> base;
 
             convertirbase(num1, base);
-    }
 
+        case 6:
+            int base;
+            cout << "Introdueix un número decimal: " << std::endl;
+            cin >> num1;
+
+            cout << "Tria la base:  1. Binari   2. Octal    3. Hexadecimal): " << std::endl;
+            cin >> base;
+
+            convertirbase(num1, base);
+    
+        case 7:
+            int num1, num2;
+            cout
+    }
     return 0;
     
 }
