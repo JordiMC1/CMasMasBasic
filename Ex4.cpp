@@ -1,6 +1,18 @@
 #include "bits/stdc++.h"
 using namespace std;
 
+void convertirbase(int num, int base) {
+    if (base == 1) {
+        cout << "El numero binari és " << bitset<8>(num) << std::endl;
+    }
+    else if (base == 2) {
+        cout << "El numero octal és " << oct << num << std::endl;
+    }
+    else if (base == 3) {
+        cout << "El numero hexadecimal és " << hex << num << std::endl;
+    }
+}
+
 int main() {
     int menu;
     
@@ -75,13 +87,24 @@ int main() {
     if (menu == 6) {
         int num1, base;
 
-        cout << "Eligeix el número DECIMAL el cual volem cambiar de base: ";
+        cout << "Eligeix el número DECIMAL el cual volem cambiar de base (Màxim 255): ";
         cin >> num1;
 
         cout << "Eligeix la base vols utilitzar? 1. Binari   2. Octal 3. Hexadecimal: " << std::endl;
         cin >> base;
         
-        cout << "El número binari de " << num1 << " és " << 
+        convertirbase(num1, base);
+    }
+
+    if (menu == 7) {
+        int num1, num2;
+
+        cout << "Eligeix el primer número: ";
+        cin >> num1;
+
+        cout << "Eligeix el segon número: ";
+        cin >> num2;
+        cout << "El número més gran és " << 
     }
 
     return 0;
