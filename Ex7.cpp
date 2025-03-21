@@ -9,8 +9,10 @@ int main() {
 
     while (true) {
         getline(cin, paraula);
-        if (paraula.empty()) break;
+        if (paraula.empty())
+        break;
         llista.push_back(paraula);
+        
     }
 
     cout << "Mida de la llista: " << llista.size() << " paraules" << std::endl;
